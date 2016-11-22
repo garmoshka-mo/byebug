@@ -86,13 +86,24 @@ Once the execution gets to your `byebug` command you will get a debugging prompt
 
 ## Byebug's commands
 
+### Debug control
+
+    Command     | Aliases      | Description / Subcommands
+    ----------- |:------------ |:-----------
+    `next`      | `n`          | Step over next function call
+    `step`      | `s`          | Step into next function call
+    ``          | ``           | Step out of current function call
+    `continue`  |              |
+
+
+### Other
+
     Command     | Aliases      | Description / Subcommands
     ----------- |:------------ |:-----------
     `backtrace` | `bt` `where` |
     `break`     |              |
     `catch`     |              |
     `condition` |              |
-    `continue`  |              |
     `delete`    |              |
     `debug`     |              |
     `disable`   |              | `breakpoints` `display`
@@ -109,7 +120,6 @@ Once the execution gets to your `byebug` command you will get a debugging prompt
     [`kill`]    |              | forceful `kill -9`
     [`list`]    | `l`          | prints more lines, following the last lines printed; `l=` - print surrounding code near executing line
     `method`    |              | `instance`
-    `next`      |              |
     `pry`       |              |
     `quit`      |              |
     `restart`   |              |
@@ -117,7 +127,6 @@ Once the execution gets to your `byebug` command you will get a debugging prompt
     `set`       |              | `autoirb` `autolist` `autopry` `autosave` `basename` `callstyle` `fullpath` `histfile` `histsize` `linetrace` `listsize` `post_mortem` `savefile` `stack_on_error` `width`
     `show`      |              | `autoirb` `autolist` `autopry` `autosave` `basename` `callstyle` `fullpath` `histfile` `histsize` `linetrace` `listsize` `post_mortem` `savefile` `stack_on_error` `width`
     `source`    |              |
-    `step`      |              |
     `thread`    |              | `current` `list` `resume` `stop` `switch`
     `tracevar`  |              |
     `undisplay` |              |
